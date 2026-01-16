@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  background:#000;
+  color:#fff;
+  font-family:system-ui, Poppins, Arial, sans-serif;
+}
+
+/* whole page = link */
+a.wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+  text-decoration:none;
+  color:inherit;
+  cursor:pointer;
+}
+
+/* text block */
+.content{
+  text-align:center;
+  max-width:750px;
+  padding:20px;
+}
+
+/* main heading */
+.heading{
+  font-size:2.8rem;
+  font-weight:800;
+  margin-bottom:12px;
+}
+
+/* Saul-style line */
+.subtitle{
+  color:#23f47a;
+  font-size:1.2rem;
+  margin-bottom:36px;
+}
+
+/* loader text */
+.loader{
+  color:#aaa;
+  font-size:28px;
+  font-weight:500;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:26px;
+}
+
+.words{
+  overflow:hidden;
+  height:34px;
+  margin-left:8px;
+}
+
+.word{
+  display:block;
+  color:#23f47a;
+  animation:spin 5s infinite;
+}
+
+/* rotating phrases */
+@keyframes spin{
+  10%{transform:translateY(-102%);}
+  25%{transform:translateY(-100%);}
+  35%{transform:translateY(-202%);}
+  50%{transform:translateY(-200%);}
+  60%{transform:translateY(-302%);}
+  75%{transform:translateY(-300%);}
+  85%{transform:translateY(-402%);}
+  100%{transform:translateY(-400%);}
+}
+
+/* tiny hint line */
+.info{
+  font-size:.9rem;
+  color:rgba(255,255,255,.45);
+}
+</style>
+</head>
+
+<body>
+
+<a class="wrapper" href="portfolio.html">
+
+  <div class="content">
+
+    <div class="heading">
+      Welcome to Chaitanya's Portfolio
+    </div>
+
+    <div class="subtitle">
+      A Developer You Can Trust
+    </div>
+
+    <div class="loader">
+      building
+      <div class="words">
+        <span class="word">systems</span>
+        <span class="word">models</span>
+        <span class="word">backends</span>
+        <span class="word">pipelines</span>
+        <span class="word">systems</span>
+      </div>
+    </div>
+
+    <div class="info">
+      click anywhere to enter
+    </div>
+
+  </div>
+
+</a>
+
+</body>
+</html>

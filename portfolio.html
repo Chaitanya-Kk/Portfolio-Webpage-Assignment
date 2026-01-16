@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaitanya | Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="container">
+
+    <div class="left">
+      <div class="tag">Hey, I'm</div>
+
+      <div class="name">Chaitanya Kamble</div>
+
+      <div class="role">Developer • Web • ML • Systems</div>
+
+      <p class="desc">
+        I like building things that solve real problems — mostly around AI,
+        data, and scalable backend systems. Always learning, always improving.
+      </p>
+
+      <div class="buttons">
+        <a href="#about" class="btn">&nbsp;&nbsp;About Me&nbsp;&nbsp;</a>
+        <a href="#projects" class="btn">&nbsp;&nbsp;Projects&nbsp;&nbsp;</a>
+        <a href="#resume" class="btn">&nbsp;&nbsp;Resume&nbsp;&nbsp;</a>
+        <a href="#contact" class="btn">&nbsp;&nbsp;Contact&nbsp;&nbsp;</a>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="picbox">
+        <img src="Chaitanya.jpg" alt="Chaitanya">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+
+      <div class="about-left">
+        <h2 class="about-title">About Me</h2>
+
+        <p class="about-text">
+          I’m <b>Chaitanya Kamble</b>, a CS (AI) student and developer who enjoys building real-world projects around
+          <b>Machine Learning</b>, <b>Systems</b>, and clean <b>Web Experiences</b>.
+        </p>
+
+        <p class="about-text">
+          I like working on projects that combine research + practical execution — from <b>wildfire intelligence</b>
+          to <b>GPR analysis</b>, <b>speech analytics</b>, and tools like <b>Luminara AI</b> that improve design workflows.
+        </p>
+
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <span class="highlight-title">Focus</span>
+            <span class="highlight-value">AI • ML • Systems</span>
+          </div>
+
+          <div class="highlight-box">
+            <span class="highlight-title">Strength</span>
+            <span class="highlight-value">Execution + Problem Solving</span>
+          </div>
+
+          <div class="highlight-box">
+            <span class="highlight-title">Location</span>
+            <span class="highlight-value">Pune, India</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <div class="about-skills-card">
+          <h3 class="skills-title">Skills & Tools</h3>
+
+          <div class="skills-grid">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Machine Learning</span>
+            <span class="skill-pill">Computer Vision</span>
+            <span class="skill-pill">NLP</span>
+            <span class="skill-pill">Signal Processing</span>
+            <span class="skill-pill">Django</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">HTML + CSS</span>
+            <span class="skill-pill">PostgreSQL/MySQL</span>
+            <span class="skill-pill">Raspberry Pi</span>
+          </div>
+
+          <p class="skills-note">
+            Currently exploring scalable AI pipelines + intelligent automation for real-world applications.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="about-title">Projects</h2>
+
+    <!-- 1 -->
+    <div class="card">
+      <div class="mac-header">
+        <span class="red"></span><span class="yellow"></span><span class="green"></span>
+      </div>
+      <span class="card-title">FireSynth — Synthetic Wildfire Dataset Generator</span>
+      <p class="card-description">
+        Generated realistic wildfire-like samples to expand training data for fire detection models & improve robustness.
+      </p>
+      <span class="card-tag">Python</span>
+      <span class="card-tag">Data Augmentation</span>
+      <span class="card-tag">Computer Vision</span>
+      <div class="code-editor">
+        <pre><code># FireSynth core logic
+img = load("forest_frame.jpg")
+fire = generate_fire_overlay(intensity=0.72, smoke=True)
+synthetic = blend(img, fire)
+save(synthetic, "firesynth_dataset/")</code></pre>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <div class="mac-header">
+        <span class="red"></span><span class="yellow"></span><span class="green"></span>
+      </div>
+      <span class="card-title">Forest Fire Prediction — ML Risk Classifier</span>
+      <p class="card-description">
+        Built an ML model using environmental parameters to predict wildfire risk and support early prevention planning.
+      </p>
+      <span class="card-tag">Machine Learning</span>
+      <span class="card-tag">Classification</span>
+      <span class="card-tag">EDA</span>
+      <div class="code-editor">
+        <pre><code># training pipeline
+X_train, X_test, y_train, y_test = split(data)
+model = RandomForestClassifier(n_estimators=250)
+model.fit(X_train, y_train)
+print("Accuracy:", model.score(X_test, y_test))</code></pre>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <div class="mac-header">
+        <span class="red"></span><span class="yellow"></span><span class="green"></span>
+      </div>
+      <span class="card-title">GPR — Ground Penetrating Radar Analysis</span>
+      <p class="card-description">
+        Processed and visualized GPR signal data to analyze subsurface structures using filtering and depth mapping.
+      </p>
+      <span class="card-tag">Signal Processing</span>
+      <span class="card-tag">Radar</span>
+      <span class="card-tag">Research</span>
+      <div class="code-editor">
+        <pre><code># GPR analysis workflow
+raw = load_gpr("scan.csv")
+filtered = bandpass(raw, low=0.1, high=0.8)
+depth_map = time_to_depth(filtered, velocity=0.12)
+plot_heatmap(depth_map)</code></pre>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <div class="mac-header">
+        <span class="red"></span><span class="yellow"></span><span class="green"></span>
+      </div>
+      <span class="card-title">Speech Analysis — Leaders Voice & Emotion Insights</span>
+      <p class="card-description">
+        A multimodal pipeline that analyzes speech content + audio signals to extract sentiment, pauses and tone patterns.
+      </p>
+      <span class="card-tag">Multimodal</span>
+      <span class="card-tag">Audio</span>
+      <span class="card-tag">NLP</span>
+      <div class="code-editor">
+        <pre><code># speech + text insights
+audio = load_audio("speech.wav")
+text  = transcribe(audio)
+
+sent = sentiment(text)
+pauses = detect_pauses(audio)
+
+report = summarize(sent, pauses)</code></pre>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <div class="mac-header">
+        <span class="red"></span><span class="yellow"></span><span class="green"></span>
+      </div>
+      <span class="card-title">MUN Webpage — Interactive Event Landing Page</span>
+      <p class="card-description">
+        Designed a modern MUN event webpage with smooth UI, sections, animations and responsive layout for all devices.
+      </p>
+      <span class="card-tag">HTML</span>
+      <span class="card-tag">CSS</span>
+      <span class="card-tag">Frontend</span>
+      <div class="code-editor">
+        <pre><code># structure of the landing page
+&lt;section id="hero"&gt; ... &lt;/section&gt;
+&lt;section id="committees"&gt; ... &lt;/section&gt;
+&lt;section id="timeline"&gt; ... &lt;/section&gt;
+&lt;section id="register"&gt; ... &lt;/section&gt;</code></pre>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <div class="mac-header">
+        <span class="red"></span><span class="yellow"></span><span class="green"></span>
+      </div>
+      <span class="card-title">Luminara AI — Adobe Express Add-on (AI Design Insights)</span>
+      <p class="card-description">
+        Built an Adobe Express add-on that connects with ChatGPT and analyzes the user’s canvas to give design feedback.
+      </p>
+      <span class="card-tag">Adobe Express</span>
+      <span class="card-tag">AI</span>
+      <span class="card-tag">Automation</span>
+      <div class="code-editor">
+        <pre><code># add-on concept flow
+canvas = get_express_canvas()
+analysis = gpt_analyze(canvas)
+
+suggestions = [
+  "Improve spacing",
+  "Fix hierarchy",
+  "Boost contrast"
+]
+
+render_panel(suggestions)</code></pre>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="resume-section">
+    <h2 class="about-title">Resume</h2>
+
+    <div class="resume-box">
+      <iframe
+        src="resume.pdf"
+        title="Chaitanya Resume"
+        class="resume-frame">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="tag">
+    <div class="contact-container">
+      <div class="contact-left">
+        <h2>Get In Touch</h2>
+        <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about tech and ideas.</p>
+
+        <div class="contact-details">
+          <div><strong>Email:</strong> <a href="mailto:chaitanya19kamble@gmail.com">chaitanya19kamble@gmail.com</a></div>
+          <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chaitanya-kamble19" target="_blank">https://www.linkedin.com/in/chaitanya-kamble19</a></div>
+          <div><strong>GitHub:</strong> <a href="https://github.com/Chaitanya-Kk/Chaitanya-Kk" target="_blank">https://github.com/Chaitanya-Kk/Chaitanya-Kk</a></div>
+          <div><strong>Location:</strong> Pune, India</div>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form class="form">
+          <p class="form-heading">Send a Message</p>
+
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input required id="name" placeholder="Your Name" class="input-field" type="text" />
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input required id="email" placeholder="your@email.com" class="input-field" type="email" />
+          </div>
+
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <input required id="subject" placeholder="Subject" class="input-field" type="text" />
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea required id="message" placeholder="Your message here..." class="input-field"></textarea>
+          </div>
+
+          <button type="submit" class="sendMessage-btn"
+            onclick="return this.form.checkValidity()
+              ? alert('✅ Message sent successfully! I will reply soon.')
+              : (this.form.reportValidity(), false);">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-title">Chaitanya Kamble</p>
+
+      <div class="footer-links">
+        <a href="mailto:chaitanya19kamble@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/chaitanya-kamble19" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Chaitanya-Kk/Chaitanya-Kk" target="_blank">GitHub</a>
+      </div>
+
+      <p class="footer-copy">© 2026 • Built with HTML + CSS</p>
+    </div>
+  </footer>
+
+</body>
+</html>
