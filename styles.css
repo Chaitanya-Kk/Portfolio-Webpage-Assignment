@@ -213,6 +213,78 @@ a.btn:hover{
   line-height:1.6;
   font-size:0.95rem;
 }
+/* ✅ ACHIEVEMENTS TABLE */
+.achievements-section{
+  width:90%;
+  max-width:1100px;
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+.ach-table-wrap{
+  margin-top:18px;
+  background:#111;
+  border:1px solid #2a2a2a;
+  border-radius:18px;
+  padding:18px;
+  box-shadow:0 4px 20px rgba(0,0,0,0.35);
+}
+
+.ach-table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:14px; /* ✅ spacing between cells */
+}
+
+.ach-table td{
+  background:#121212;
+  border:1px solid transparent; /* ✅ invisible borders */
+  border-radius:14px;
+  padding:18px;
+  vertical-align:middle;
+  transition:0.25s;
+}
+
+.ach-table td:hover{
+  border-color:rgba(55,255,139,0.45);
+  transform:translateY(-3px);
+}
+
+.ach-cell{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.ach-num{
+  font-size:1.8rem;
+  font-weight:900;
+  color:#37FF8B;
+}
+
+.ach-text{
+  color:#bfbfbf;
+  font-size:0.95rem;
+  line-height:1.4;
+}
+
+@media(max-width:850px){
+  .ach-table,
+  .ach-table tbody,
+  .ach-table tr,
+  .ach-table td{
+    display:block;
+    width:100%;
+  }
+
+  .ach-table{
+    border-spacing:0;
+  }
+
+  .ach-table td{
+    margin-bottom:14px;
+  }
+}
 
 /* PROJECTS */
 #projects{
@@ -526,3 +598,4 @@ textarea.input-field{
     align-self:stretch;
   }
 }
+
